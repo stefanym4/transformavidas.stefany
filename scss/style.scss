@@ -1,0 +1,119 @@
+@import"header";
+@import"main";
+@import"footer";
+@import"mixin";
+@import "variables";
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    min-height: 100vh;
+    text-align: center;
+
+
+}
+
+
+/*--quienes--*/
+.quienes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:min-content ;
+    grid-template-areas:"info" ;
+}
+
+.info{
+    grid-area: info;
+   background-color:  #e1b1e8;  
+}
+/*--grid contacto--*/
+
+.grid-contacto{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: min-content;
+    grid-template-areas:" formularioo grid-container" ;
+}
+
+.formularioo{
+    grid-area: formularioo;
+    background-color: #e1b1e8;
+}
+.grid-container{
+    grid-area: grid-container;
+    background-color:   #e1b1e8;
+}
+/*----DISPLAY GRID--*/
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: min-content;
+    grid-template-areas: "informacion requisitos contrato";
+}
+
+.informacion{
+    grid-area:informacion ;
+    background-color:     #e1b1e8;
+}
+
+.requisitos{
+    grid-area: requisitos;
+    background-color: #bdeff6;
+}
+
+.contrato{
+    grid-area: contrato;
+    background-color:   #e1b1e8;
+}
+ 
+@media screen and (min-width:300px) and (max-width:500px){
+    .display-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: "informacion"
+        "requisitos" 
+        "contrato";
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:1000px){
+    .display-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        grid-template-areas: "informacion"
+        "requisitos" 
+        "contrato";
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:520px){
+    .grid-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: " formularioo" 
+        "grid-container";
+    }
+}
+
+@media screen and (min-width:521px) and (max-width:1000px){
+    .grid-contacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content;
+        grid-template-areas: " formularioo" 
+        "grid-container";
+    }
+}
+

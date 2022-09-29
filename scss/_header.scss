@@ -1,0 +1,42 @@
+
+/*--header--*/
+header{ 
+   
+     ul{
+        list-style: none;
+       
+
+        li{
+        
+           
+            a{ 
+                color: #010101 ;
+                padding: 10px;
+            text-decoration: none;
+            
+            }
+        }
+    }
+
+
+
+nav {
+    a {
+    font-weight: 600;
+    padding-right: 10px;
+    text-decoration: none;
+}
+}
+.logo{
+    width: 100px;
+    height: 60px;
+}
+a{ 
+    color: #010101 ;
+    padding: 10px;
+text-decoration: none;
+}
+a:hover{
+     background-color:  #e1b1e8;
+}
+}

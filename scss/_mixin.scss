@@ -1,0 +1,17 @@
+@mixin texto ($fontsize, $lineHeight, $color){
+    font-size: $fontsize;
+    line-height: $lineHeight;
+    color: $color;
+}
+p{
+    @include texto(1.2em,1.0em ,#110045 )
+}
+
+@mixin color ($color,$fontsize){
+font-size:$fontsize;
+color: $color;
+}
+    
+li{
+    @include color(rgb(15, 9, 49), (1.2em))
+}

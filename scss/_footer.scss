@@ -1,0 +1,28 @@
+/*----FOOTER--*/
+
+
+footer {
+    background-color:#ffffff;
+    padding: 1em 0;
+    text-align: center;
+
+    .botones a {
+        padding: 0 10px;
+        line-height: 5px;
+        border-bottom: 2px solid;color:  #000000; 
+    }
+    
+     h6 {
+        font-size: large;
+        min-height: min-content;
+        color:  #000000; 
+        
+    }
+   
+        
+    a:hover{
+            background-color: #e1b1e8;
+        
+        }
+ 
+}
